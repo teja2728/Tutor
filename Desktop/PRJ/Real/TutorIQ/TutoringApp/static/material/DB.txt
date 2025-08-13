@@ -1,0 +1,32 @@
+create database tutoring;
+use tutoring;
+
+create table register(username varchar(50) primary key,
+password varchar(50),
+gender varchar(30),
+qualification varchar(50),
+contact varchar(12),
+email varchar(50),
+address varchar(80));
+
+create table uploadmaterial(material_id int,
+material_type varchar(50),
+material_name varchar(100),
+material_desc varchar(400),
+upload_date varchar(30));
+
+insert into uploadmaterial values(1, 'CPP', 'CPP.pdf', 'CPP is a general-purpose, object-oriented programming language created by Bjarne Stroustrup as an extension of the C programming language. It is a high-level, compiled language that supports procedural, functional, and generic programming styles. CPP is often used in system and application programming, and it is one of the most popular programming languages in the world.','2023-11-11');
+insert into uploadmaterial values(2, 'C Programming', 'cprogramming_tutorial.pdf', 'C is a procedural programming language that was developed by Dennis Ritchie at Bell Laboratories of AT&T Labs in 1972. It was originally developed as a system programming language to write the UNIX operating system. C is used for system administration, network programming, and embedded software.', '2023-11-11');
+insert into uploadmaterial values(3, 'Java', 'java_tutorial.pdf', 'Java is a general-purpose, class-based, object-oriented programming language designed for having as few implementation dependencies as possible. It is a compiled language and not an interpreted language. It is a concurrent language and not a sequential language. It is a strongly typed language and not a weakly typed language. It is a dynamically typed language and not a statically typed language. It is a garbage-collected language and not a manually managed language.', '2023-11-11');
+insert into uploadmaterial values(4, 'Javascript', 'javascript_tutorial.pdf', 'JavaScript is a lightweight, interpreted, cross-platform, single-threaded programming language. Its commonly used by web developers to add dynamic interactions to web pages, applications, servers, and games. JavaScript is also used to create mobile applications and software. JavaScript is easy to learn and use. It works seamlessly alongside HTML and CSS, complementing CSS in formatting HTML elements while providing user interaction.', '2023-11-11');
+insert into uploadmaterial values(5, 'SQL', 'SQL.pdf', 'SQL stands for Structured Query Language. Its a standard programming language used to extract, organize, manage, and manipulate data stored in relational databases. SQL is a database language that can execute activities on databases that consist of tables made up of rows and columns. SQL is a tool for organizing, managing, and retrieving archived data from a computer database. Its one of the most important programming languages to know if you work with data.', '2023-11-11');
+commit;
+
+
+
+
+
+
+
+
+

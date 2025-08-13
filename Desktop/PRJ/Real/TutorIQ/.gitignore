@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.exe
+*.pyd
+*.dll
+*.so
+*.pyc
+*.log
+*.ipynb_checkpoints/
+node_modules/
+
+venv/
+ENV/
+env/
+.venv/
